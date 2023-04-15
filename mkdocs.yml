@@ -1,0 +1,28 @@
+# according to mkdocs.org, both site_name and site_url are required
+# https://www.mkdocs.org/getting-started/#creating-a-new-project
+site_name: mkdocs-material-5160
+site_url: https://aquafina-water-bottle.github.io/mkdocs-material-5160/
+
+theme:
+  name: material
+
+  features:
+    # single page application
+    - navigation.instant
+
+    # code block annotations
+    - content.code.annotate
+
+    # copy-to-clipboard buttons for all code blocks
+    - content.code.copy
+
+nav:
+  - Home: index.md
+
+# not necessary for reproduction, just used for zipping
+plugins:
+  - info
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.superfences
